@@ -1,0 +1,91 @@
+NodeJS
+--------------------------------------------------------
+This package has installed:
+	•	Node.js v16.13.1 to /usr/local/bin/node
+	•	npm v8.1.2 to /usr/local/bin/npm
+Make sure that /usr/local/bin is in your $PATH.
+
+
+Express
+--------------------------------------------------------
+sudo npm install express --save
+
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+cnrMacBookPro:cse341-project cnreina$ pwd
+/Users/cnreina/Developer/BYUI-Code/CSE-341-Code/CS341Code/week-01/cse341-project
+cnrMacBookPro:cse341-project cnreina$ node -v
+v16.13.1
+cnrMacBookPro:cse341-project cnreina$ sudo npm install express --save
+Password:
+npm WARN old lockfile 
+npm WARN old lockfile The package-lock.json file was created with an old version of npm,
+npm WARN old lockfile so supplemental metadata must be fetched from the registry.
+npm WARN old lockfile 
+npm WARN old lockfile This is a one-time fix-up, please be patient...
+npm WARN old lockfile 
+npm WARN EBADENGINE Unsupported engine {
+npm WARN EBADENGINE   package: 'node-js-getting-started@0.3.0',
+npm WARN EBADENGINE   required: { node: '12.x' },
+npm WARN EBADENGINE   current: { node: 'v16.13.1', npm: '8.1.2' }
+npm WARN EBADENGINE }
+npm WARN deprecated har-validator@5.1.3: this library is no longer supported
+npm WARN deprecated uuid@3.4.0: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
+npm WARN deprecated request@2.88.2: request has been deprecated, see https://github.com/request/request/issues/3142
+npm WARN deprecated core-js@2.6.11: core-js@<3.4 is no longer maintained and not recommended for usage due to the number of issues. Because of the V8 engine whims, feature detection in old core-js versions could cause a slowdown up to 100x even if nothing is polyfilled. Please, upgrade your dependencies to the actual version of core-js.
+
+added 310 packages, and audited 311 packages in 7s
+
+31 packages are looking for funding
+  run `npm fund` for details
+
+12 vulnerabilities (7 moderate, 4 high, 1 critical)
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+cnrMacBookPro:cse341-project cnreina$ 
+
+
+Heroku
+----------------------------------------------------------
+
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+cnrMacBookPro:cse341-project cnreina$ npm install heroku
+npm WARN EBADENGINE Unsupported engine {
+npm WARN EBADENGINE   package: 'node-js-getting-started@0.3.0',
+npm WARN EBADENGINE   required: { node: '12.x' },
+npm WARN EBADENGINE   current: { node: 'v16.13.1', npm: '8.1.2' }
+npm WARN EBADENGINE }
+npm WARN deprecated debug@4.1.1: Debug versions >=3.2.0 <3.2.7 || >=4 <4.3.1 have a low-severity ReDos regression when used in a Node.js environment. It is recommended you upgrade to 3.2.7 or 4.3.1. (https://github.com/visionmedia/debug/issues/797)
+npm WARN deprecated debug@4.1.1: Debug versions >=3.2.0 <3.2.7 || >=4 <4.3.1 have a low-severity ReDos regression when used in a Node.js environment. It is recommended you upgrade to 3.2.7 or 4.3.1. (https://github.com/visionmedia/debug/issues/797)
+npm WARN deprecated strip-eof@2.0.0: Renamed to `strip-final-newline` to better represent its functionality.
+npm WARN deprecated uuid@3.2.1: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
+npm WARN deprecated uuid@3.3.2: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
+
+added 686 packages, changed 2 packages, and audited 997 packages in 39s
+
+50 packages are looking for funding
+  run `npm fund` for details
+
+62 vulnerabilities (47 moderate, 14 high, 1 critical)
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+cnrMacBookPro:cse341-project cnreina$ 
+
+
+---------------------------------------------------------
+
