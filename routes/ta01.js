@@ -58,6 +58,7 @@ router.post('/add-activity', (req, res, next) => {
   req.on('data', (chunk) => {
     body.push(chunk);
   });
+
   return req.on('end', () => {
     const parsedBody = Buffer.concat(body).toString();
     const newActivity = parsedBody.split('=')[1];
@@ -69,6 +70,7 @@ router.post('/add-activity', (req, res, next) => {
     res.writeHead(302, { Location: 'activities' });
     res.end();
   });
+
 });
 
 /***************************************************************************
