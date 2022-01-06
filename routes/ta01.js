@@ -6,6 +6,7 @@ const router = express.Router();
 // proper routing for the view engine
 
 const activities = ['soccer', 'basketball', 'football', 'swimming'];
+
 router.get('/', (req, res, next) => {
   // Request handling
   // CORE CHALLENGE 1 -
