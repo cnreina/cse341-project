@@ -16,7 +16,20 @@
       </div>
     </div>
     <div class="container">
+      <form method="POST" action="/ta02/add-user">
+        <input type="text" placeholder="Username" name="username">
+        <input type="submit" value="Add User">
+      </form>
+      <% if(users.length > 0){ %>
+        <% for(i=0; i<numUsers; i++) {%>
+          <div></div>
+          <%= users[i]%>
+        <%}} %>
 
+        <form method="POST" action="/ta02/delete-user">
+          <input type="text" name="deleteName" placeholder="Delete Name">
+          <input type="submit" value="Delete">
+        </form>
     </div>
 
 
