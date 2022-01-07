@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <% include ../includes/header.ejs %>
+  </head>
+  <body>
+    <% include ../includes/nav.ejs %>
+      <div class="jumbotron text-center">
+        <div class="container">
+          <h1>
+            <%= title %>
+          </h1>
+          <p>Team 2 - Activity 2</p>
+        </div>
+      </div>
+      <!-- writeToFile form -->
+      <div class="container">
+        <form method="POST" action="/ta01/stretch-2/write-text">
+          <input type="text" name="writeToFile" placeholder="Text to write">
+          <input type="submit" value="Add Text">
+        </form>
+        <!-- display text -->
+        <% if(inputText.length > 0){ %>
+            <div></div>
+            <%= inputText %>
+          <%} %>
+      </div>
+  </body>
+</html>
