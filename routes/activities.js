@@ -5,7 +5,7 @@ let activities = []
 
 router.get('/', (req, res, next) => {
   res.render('pages/activities', {
-    title: 'Team Activity 01 - Activities',
+    title: 'Team Activities',
     path: 'activities', // For pug, EJS
     activeTA03: true, // For HBS
     contentCSS: true, // For HBS
