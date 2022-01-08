@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <% include ../includes/header.ejs %>
+  </head>
+  <body>
+    <% include ../includes/nav.ejs %>
+      <div class="jumbotron text-center">
+        <div class="container">
+          <h1>
+            <%= title %>
+          </h1>
+          <p>Team 2 - Activity 2</p>
+        </div>
+      </div>
+      <!-- adNumbers form -->
+      <div class="container">
+        <form method="POST" action="/ta01/stretch-3/add-numbers">
+          <input type="number" name="op1" placeholder="Number"> + 
+          <input type="number" name="op2" placeholder="Number"> 
+          <button type="submit" value="Submit">Submit</button>
+        </form>
+
+        <!-- display result -->
+        <% if(resultArray.length > 0){ %>
+            <div> <%= option1 %> + <%= option2 %> =  
+              <%= resultArray %>
+            </div>
+          <%} %>
+      </div>
+
+      <!-- load javascript files -->
+      <% include ../includes/scripts.ejs %>
+
+      <!-- display errors -->
+      <% if(errorsArray.length > 0){ %>
+        <script>
+          errorAlert('<%= errorsArray %>');
+        </script>
+      <% } %>
+
+  </body>
+</html>
