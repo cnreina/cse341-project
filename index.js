@@ -14,6 +14,7 @@ const ta04Routes        = require('./routes/ta04');
 const activitiesRoutes  = require('./routes/activities');
 const stretch1Routes    = require('./routes/stretch-1');
 const stretch2Routes    = require('./routes/stretch-2');
+const stretch3Routes    = require('./routes/stretch-3');
 
 app
   .use(express.static(path.join(__dirname, 'public')))
@@ -28,6 +29,7 @@ app
   .use('/ta01/activities', activitiesRoutes)
   .use('/ta01/stretch-1', stretch1Routes)
   .use('/ta01/stretch-2', stretch2Routes)
+  .use('/ta01/stretch-3', stretch3Routes)
   .use('/ta01', ta01Routes)
   .use('/ta02', ta02Routes)
   .use('/ta03', ta03Routes)

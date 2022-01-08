@@ -13,23 +13,37 @@
           <p>Team 2 - Activity 02</p>
         </div>
       </div>
-      <!-- add username form -->
+      <!-- add user form -->
       <div class="container">
-        <form method="POST" action="/ta02/add-username">
-          <input type="text" name="newUserName" placeholder="username">
+        <form method="POST" action="/ta02/addUser">
+          <input type="text" name="addUser" placeholder="User name">
           <input type="submit" value="Add User">
         </form>
-        <!-- delete username form -->
-        <form method="POST" action="/ta02/delete-username">
-          <input type="text" name="deleteUserName" placeholder="Delete Name">
-          <input type="submit" value="Delete">
+        <!-- remove user form -->
+        <form method="POST" action="/ta02/removeUser">
+          <input type="text" name="removeUser" placeholder="User name">
+          <input type="submit" value="Remove User">
         </form>
+
         <!-- display users -->
         <% if(users.length > 0){ %>
-          <% for(i=0; i<numUsers; i++) {%>
-            <div></div>
-            <%= users[i]%>
-          <%}} %>
+          <% for(i=0; i<numUsers; i++) { %>
+            <div>
+              <%= users[i]%>
+            </div>
+        <% }} %>
+
       </div>
+
+      <!-- load javascript files -->
+      <% include ../includes/scripts.ejs %>
+
+      <!-- display errors -->
+      <% if(errorsArray.length > 0){ %>
+        <script>
+          errorAlert('<%= errorsArray %>');
+        </script>
+      <% } %>
+
   </body>
 </html>
